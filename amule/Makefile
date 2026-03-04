@@ -5,6 +5,8 @@
 # See /LICENSE for more information.
 #
 
+# XXX binutils (libbfd) bumped
+
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amule
@@ -63,8 +65,7 @@ CONFIGURE_ARGS+= \
 	--with-libiconv-prefix="$(ICONV_PREFIX)" \
 	--with-libintl-prefix="$(INTL_PREFIX)"
 
-TARGET_LDFLAGS += \
-	-liconv
+TARGET_LDFLAGS += $(if $(ICONV_FULL),-liconv)
 
 define Build/Configure
 	( cd $(PKG_BUILD_DIR); ./autogen.sh )
