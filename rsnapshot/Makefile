@@ -59,7 +59,7 @@ define Package/rsnapshot/description
 endef
 
 define Package/rsnapshot/conffiles
-/opt/etc/$(PKG_NAME).conf
+/opt/etc/rsnapshot.conf
 endef
 
 CONFIGURE_ARGS += \
