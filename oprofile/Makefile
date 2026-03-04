@@ -5,12 +5,14 @@
 # See /LICENSE for more information.
 #
 
+# XXX binutils (libbfd) bumped
+
 include $(TOPDIR)/rules.mk
 include $(INCLUDE_DIR)/kernel.mk
 
 PKG_NAME:=oprofile
 PKG_VERSION:=1.4.0
-PKG_RELEASE:=1
+PKG_RELEASE:=2
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=@SF/oprofile/
@@ -35,7 +37,7 @@ define Package/oprofile
   CATEGORY:=Development
   TITLE:=OProfile System Profiler
   URL:=http://oprofile.sourceforge.net
-  DEPENDS:=+libpopt +libstdcpp +objdump
+  DEPENDS:=+libbfd +libpopt +libstdcpp $(INTL_DEPENDS)
 endef
 
 define Package/oprofile/description
@@ -47,7 +49,7 @@ define Package/oprofile-utils
   CATEGORY:=Development
   TITLE:=OProfile System Profiler (extra utilities)
   URL:=http://oprofile.sourceforge.net
-  DEPENDS:=oprofile
+  DEPENDS:=+oprofile
 endef
 
 CONFIGURE_ARGS += \
