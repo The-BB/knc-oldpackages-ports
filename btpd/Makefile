@@ -4,6 +4,7 @@
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
 #
+# Abandoned in 2020
 
 include $(TOPDIR)/rules.mk
 
@@ -15,7 +16,7 @@ PKG_SOURCE_PROTO:=git
 PKG_SOURCE_DATE:=2020-04-07
 PKG_SOURCE_VERSION:=a3a10dfe1ece4a726530353a7b208c0cb4ff7e0d
 PKG_SOURCE_URL:=https://github.com/btpd/btpd
-PKG_MIRROR_HASH:=1a8c92d898dc9781ac0030ea5db730642925784e322a9d4254e3078daaee8dff
+PKG_MIRROR_HASH:=79192ec20c5e5911ae3b1b6927ee44c0b87e2a029e49d74e15e67d08f4cd647b
 
 PKG_VERSION:=$(PKG_REAL_VERSION)_git$(subst -,,$(PKG_SOURCE_DATE))~$(call version_abbrev,$(PKG_SOURCE_VERSION))
 
