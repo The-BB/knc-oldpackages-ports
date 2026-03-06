@@ -12,6 +12,10 @@ PKG_NAME:=cutter
 PKG_VERSION:=1.04
 PKG_RELEASE:=2
 
+PKG_MAINTAINER:=
+PKG_LICENSE:=GPL-2.0-or-later
+PKG_LICENSE_FILES:=COPYING
+
 include $(INCLUDE_DIR)/package.mk
 
 define Package/cutter
@@ -22,9 +26,9 @@ define Package/cutter
 endef
 
 define Package/cutter/description
-	Cutter is an open source program that allows Linux firewall
-	administrators to abort TCP/IP connections routed over the
-	firewall or router on which it is run.
+ Cutter is an open source program that allows Linux firewall
+ administrators to abort TCP/IP connections routed over the
+ firewall or router on which it is run.
 endef
 
 define Package/cutter/install
