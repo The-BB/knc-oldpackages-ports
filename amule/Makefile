@@ -5,13 +5,12 @@
 # See /LICENSE for more information.
 #
 
-# XXX binutils (libbfd) bumped
-
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amule
 PKG_VERSION:=2.3.3
-PKG_RELEASE:=4
+# XXX binutils (libbfd) bumped
+PKG_RELEASE:=5
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/amule-project/amule/tar.gz/$(PKG_VERSION)?
