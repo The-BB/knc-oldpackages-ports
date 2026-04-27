@@ -5,14 +5,13 @@
 # See /LICENSE for more information.
 #
 
-# XXX binutils (libbfd) bumped
-
 include $(TOPDIR)/rules.mk
 include $(INCLUDE_DIR)/kernel.mk
 
 PKG_NAME:=oprofile
 PKG_VERSION:=1.4.0
-PKG_RELEASE:=2
+# XXX binutils (libbfd) bumped
+PKG_RELEASE:=3
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=@SF/oprofile/
