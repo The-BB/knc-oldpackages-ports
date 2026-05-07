@@ -8,13 +8,13 @@ PROG="/opt/bin/$PROCS"
 
 #export ODCH_HOME="/opt/var/lib/$PROCS"
 
-pre_cmd() {
+start_pre() {
   [ -d "/opt/var/lib/$PROCS" ] || \
   mkdir -pm 0750 /opt/var/lib/"$PROCS"
   cat /opt/etc/$PROCS.conf > /opt/var/lib/"$PROCS"/config
 }
 
-PRECMD="pre_cmd"
+PRECMD="start_pre"
 ARGS="-w /opt/var/lib/$PROCS"
 PREARGS=""
 
