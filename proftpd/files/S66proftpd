@@ -8,12 +8,12 @@ PROG="/opt/sbin/$PROCS"
 
 PID_FILE="/opt/var/run/$PROCS/$PROCS.pid"
 
-pre_cmd() {
+start_pre() {
   [ -d "/opt/var/run/$PROCS" ] || \
   mkdir -pm 0750 /opt/var/run/"$PROCS"
 }
 
-PRECMD="pre_cmd"
+PRECMD="start_pre"
 ARGS=""
 PREARGS=""
 
