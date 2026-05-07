@@ -8,7 +8,7 @@ PROG="/opt/bin/$PROCS"
 
 PID_FILE="/opt/var/run/$PROCS.pid"
 
-pre_cmd() {
+start_pre() {
   amule_home="/opt/var/lib/amule"
   amule_conf="$amule_home/amule.conf"
   amule_pass="$(echo -n MyP@\$\$W0rd | md5sum | cut -d' ' -f1)"
@@ -24,7 +24,7 @@ pre_cmd() {
   }
 }
 
-PRECMD="pre_cmd"
+PRECMD="start_pre"
 ARGS="-c /opt/var/lib/amule -f -p $PID_FILE"
 PREARGS=""
 
