@@ -8,14 +8,14 @@ PROG="/opt/bin/$PROCS"
 
 PID_FILE="/opt/var/run/$PROCS.pid"
 
-pre_cmd() {
+start_pre() {
   rm -f "$PID_FILE"
   [ -d "/opt/etc/$PROCS" ] || mkdir -pm 0750 /opt/etc/"$PROCS"
   [ -f "/opt/etc/$PROCS/config.xml" ] || \
   $PROG --create-config > /opt/etc/"$PROCS"/config.xml
 }
 
-PRECMD="pre_cmd"
+PRECMD="start_pre"
 ARGS="\
 -f /opt/etc/$PROCS \
 -m /opt/etc/$PROCS \
