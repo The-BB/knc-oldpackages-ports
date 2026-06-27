@@ -31,7 +31,7 @@ define Package/ctorrent/Default
   CATEGORY:=Network
   DEPENDS:=+libstdcpp
   TITLE:=console-based BitTorrent client
-  MAINTAINER:=Peter Wagner <tripolar@gmx.at>
+  MAINTAINER:=
   URL:=http://www.rahul.net/dholmes/ctorrent/
 endef
 
