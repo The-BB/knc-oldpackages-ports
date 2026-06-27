@@ -19,8 +19,7 @@ PKG_HASH:=91186f20c83ffc48d7a15a9a6e2329ed4feeb2dcb51f4aa9672c8840190ea741
 PKG_CPE_ID:=cpe:/a:keepalived:keepalived
 PKG_LICENSE:=GPL-2.0-or-later
 PKG_LICENSE_FILES:=COPYING
-PKG_MAINTAINER:=Ben Kelly <ben@benjii.net> \
-		Florian Eckert <fe@dev.tdt.de>
+PKG_MAINTAINER:=
 
 PKG_CONFIG_DEPENDS:= \
 	KEEPALIVED_LEGACY_VRRP \
