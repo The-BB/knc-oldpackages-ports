@@ -16,7 +16,7 @@ PKG_SOURCE:=bird-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://bird.network.cz/download/$(PKG_VERSION_MAJOR)
 PKG_HASH:=6c61ab5d2ef59d2559a8735b8252b5a0238013b43e5fb8a96c5d9d06e7bc00b2
 PKG_BUILD_DEPENDS:=ncurses readline
-PKG_MAINTAINER:=Álvaro Fernández Rojas <noltari@gmail.com>
+PKG_MAINTAINER:=
 PKG_BUILD_DIR:=$(BUILD_DIR)/bird-$(PKG_VERSION)
 
 PKG_LICENSE:=GPL-2.0
