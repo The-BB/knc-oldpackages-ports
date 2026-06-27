@@ -21,7 +21,7 @@ PKG_BUILD_PARALLEL:=1
 PKG_CHECK_FORMAT_SECURITY:=0
 PKG_BUILD_DIR:=$(BUILD_DIR)/xtables-addons-$(PKG_VERSION)
 
-PKG_MAINTAINER:=Jo-Philipp Wich <jow@openwrt.org>
+PKG_MAINTAINER:=
 
 PKG_FIXUP:=autoreconf
 
