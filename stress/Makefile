@@ -15,7 +15,7 @@ PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.bz2
 PKG_SOURCE_URL:=https://github.com/resurrecting-open-source-projects/stress/releases/download/${PKG_VERSION}/
 PKG_HASH:=e63adb57597e617c14ecb0d841b5d990460796d9e9ec69bd56fe645ef02eb239
 
-PKG_MAINTAINER:=Alexandru Ardelean <ardeleanalex@gmail.com>
+PKG_MAINTAINER:=
 PKG_LICENSE:=GPL-2.0-only
 PKG_LICENSE_FILES:=COPYING
 
