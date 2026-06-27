@@ -16,7 +16,7 @@ PKG_SOURCE_URL:=@SAVANNAH/quagga/ \
 		https://github.com/Quagga/quagga/releases/download/$(PKG_NAME)-$(PKG_VERSION)/
 PKG_HASH:=e364c082c3309910e1eb7b068bf39ee298e2f2f3f31a6431a5c115193bd653d3
 
-PKG_MAINTAINER:=Vasilis Tsiligiannis <acinonyx@openwrt.gr>
+PKG_MAINTAINER:=
 PKG_LICENSE:=GPL-2.0-or-later
 
 PKG_FIXUP:=autoreconf
