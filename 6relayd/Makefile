@@ -18,7 +18,7 @@ PKG_SOURCE_VERSION:=0381cf15e9721054f902354e9c3b9fb0201bab7f
 PKG_SOURCE_URL:=https://github.com/sbyx/6relayd
 PKG_MIRROR_HASH:=c439c1703711b50c9799e3ad034339126f3f7d835c7f44ac6b8cddc5f5501249
 
-PKG_MAINTAINER:=Steven Barth <steven@midlink.org>
+PKG_MAINTAINER:=
 
 include $(INCLUDE_DIR)/package.mk
 include $(INCLUDE_DIR)/cmake.mk
