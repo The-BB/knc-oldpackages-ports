@@ -22,7 +22,7 @@ define Package/libotr
   TITLE:=OTR Messaging Library
   URL:=http://www.cypherpunks.ca/otr/
   DEPENDS:=+libgcrypt
-  MAINTAINER:=Peter Wagner <tripolar@gmx.at>
+  MAINTAINER:=
 endef
 
 define Package/libotr/description
