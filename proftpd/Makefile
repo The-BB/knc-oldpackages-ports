@@ -30,7 +30,7 @@ define Package/proftpd
   CATEGORY:=Network
   TITLE:=ProFTPD FTP server
   URL:=http://www.proftpd.org/
-  MAINTAINER:=Cezary Jackiewicz <cezary@eko.one.pl>
+  MAINTAINER:=
   DEPENDS:=+libattr +libidn +libidn2 +libncursesw +libopenssl +libsodium \
 	$(ICONV_DEPENDS) $(INTL_DEPENDS)
 endef
