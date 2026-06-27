@@ -16,7 +16,7 @@ PKG_SOURCE:=$(PKG_NAME)-v$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://nodejs.org/dist/v$(PKG_VERSION)
 PKG_HASH:=1a5c52c50185f7c23318e7e8001cc58054736acb98cb8c523d33b136da9e54be
 
-PKG_MAINTAINER:=Hirokazu MORIKAWA <morikw2@gmail.com>, Adrian Panella <ianchi74@outlook.com>
+PKG_MAINTAINER:=
 PKG_LICENSE:=MIT
 PKG_LICENSE_FILES:=LICENSE
 PKG_CPE_ID:=cpe:/a:nodejs:node.js
