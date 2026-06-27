@@ -28,7 +28,7 @@ define Package/nzbget
   DEPENDS:=+libxml2 +libopenssl +libncurses +libstdcpp
   URL:=http://nzbget.net
   TITLE:=Binary newsgrabber for nzb-files
-  MAINTAINER:=Artur Wronowski <arteqw@gmail.com>
+  MAINTAINER:=
 endef
 
 define Package/nzbget/description
